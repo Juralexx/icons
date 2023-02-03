@@ -51,6 +51,7 @@ import AddUser from './general/AddUser';
 import ClipboardCheck from './general/ClipboardCheck';
 import ClipboardList from './general/ClipboardList';
 import DeleteUser from './general/DeleteUser';
+import OutlineCircle from './general/OutlineCircle';
 
 import ArrowLeft from './navigation/ArrowLeft';
 import ArrowRight from './navigation/ArrowRight';
@@ -274,6 +275,10 @@ import Forward from './media/Forward';
 import Next from './media/Next';
 import Shutdown from './media/Shutdown';
 import Backward from './media/Backward';
+import Emoji from './general/Emoji';
+import Reaction from './general/Reaction';
+import Point from './general/Point';
+import Spinner from './general/Spinner';
 
 const Icon = (props) => {
     switch (props.name) {
@@ -467,9 +472,9 @@ const Icon = (props) => {
             return <Pinterest {...props} />;
         case 'PinterestCircle':
             return <PinterestCircle {...props} />;
-        case 'Pinterest':
+        case 'PinterestSquare':
             return <PinterestSquare {...props} />;
-        case 'Pinterest':
+        case 'PinterestOutline':
             return <PinterestOutline {...props} />;
         case 'Youtube':
             return <Youtube {...props} />;
@@ -799,6 +804,16 @@ const Icon = (props) => {
             return <FilePlus {...props} />;
         case 'GroupFolder':
             return <GroupFolder {...props} />;
+        case 'OutlineCircle':
+            return <OutlineCircle {...props} />;
+        case 'Emoji':
+            return <Emoji {...props} />;
+        case 'Reaction':
+            return <Reaction {...props} />;
+        case 'Point':
+            return <Point {...props} />;
+        case 'Spinner':
+            return <Spinner {...props} />;
         default:
             return <Link {...props} />;
     }
