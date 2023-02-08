@@ -257,6 +257,8 @@ import WhatsappOutline from './networks/WhatsappOutline';
 
 import Music from './media/Music';
 import Note from './media/Note';
+import CD from './media/CD';
+import Equalizer from './media/Equalizer';
 import Play from './media/Play';
 import PlayCircle from './media/PlayCircle';
 import Repeat from './media/Repeat';
@@ -598,6 +600,10 @@ const Icon = (props) => {
             return <Mute {...props} />;
         case 'Playlist':
             return <Playlist {...props} />;
+        case 'CD':
+            return <CD {...props} />;
+        case 'Equalizer':
+            return <Equalizer {...props} />;
         case 'Forward':
             return <Forward {...props} />;
         case 'Next':
