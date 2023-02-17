@@ -52,6 +52,11 @@ import ClipboardCheck from './general/ClipboardCheck';
 import ClipboardList from './general/ClipboardList';
 import DeleteUser from './general/DeleteUser';
 import OutlineCircle from './general/OutlineCircle';
+import Emoji from './general/Emoji';
+import Reaction from './general/Reaction';
+import Point from './general/Point';
+import Spinner from './general/Spinner';
+import Earth from './general/Earth';
 
 import ArrowLeft from './navigation/ArrowLeft';
 import ArrowRight from './navigation/ArrowRight';
@@ -118,6 +123,7 @@ import Mouse from './device/Mouse';
 import Watch from './device/Watch';
 import SDCard from './device/SDCard';
 import Router from './device/Router';
+import Database from './device/Database';
 
 import Home from './home/Home';
 import Book from './home/Book';
@@ -277,10 +283,37 @@ import Forward from './media/Forward';
 import Next from './media/Next';
 import Shutdown from './media/Shutdown';
 import Backward from './media/Backward';
-import Emoji from './general/Emoji';
-import Reaction from './general/Reaction';
-import Point from './general/Point';
-import Spinner from './general/Spinner';
+import Micro from './media/Micro';
+
+import Bootstrap from './code/Bootstrap';
+import Chrome from './code/Chrome';
+import Command from './code/Command';
+import HTML from './code/HTML';
+import CSS from './code/CSS';
+import Express from './code/Express';
+import Gatsby from './code/Gatsby';
+import Github from './code/Github';
+import Graphql from './code/Graphql';
+import Gulp from './code/Gulp';
+import Javascript from './code/Javascript';
+import Nextjs from './code/Nextjs';
+import Photoshop from './code/Photoshop';
+import Postman from './code/Postman';
+import Reactjs from './code/React';
+import ReactRouter from './code/ReactRouter';
+import Redux from './code/Redux';
+import Sass from './code/Sass';
+import Socketio from './code/Socketio';
+import StyledComponents from './code/StyledComponents';
+import Tailwindcss from './code/Tailwindcss';
+import Typescript from './code/Typescript';
+import NodeJS from './code/NodeJS';
+import Code from './code/Code';
+import Axios from './code/Axios';
+import Api from './code/Api';
+import Npm from './code/Npm';
+import Json from './code/Json';
+import Mongodb from './code/Mongodb';
 
 const Icon = (props) => {
     switch (props.name) {
@@ -598,6 +631,8 @@ const Icon = (props) => {
             return <VolumeHalf {...props} />;
         case 'Mute':
             return <Mute {...props} />;
+        case 'Micro':
+            return <Micro {...props} />;
         case 'Playlist':
             return <Playlist {...props} />;
         case 'CD':
@@ -820,6 +855,68 @@ const Icon = (props) => {
             return <Point {...props} />;
         case 'Spinner':
             return <Spinner {...props} />;
+        case 'Bootstrap':
+            return <Bootstrap />;
+        case 'Chrome':
+            return <Chrome />;
+        case 'Command':
+            return <Command />;
+        case 'CSS':
+            return <CSS />;
+        case 'HTML':
+            return <HTML />;
+        case 'Express':
+            return <Express />;
+        case 'Gatsby':
+            return <Gatsby />;
+        case 'Github':
+            return <Github />;
+        case 'Graphql':
+            return <Graphql />;
+        case 'Gulp':
+            return <Gulp />;
+        case 'Javascript':
+            return <Javascript />;
+        case 'Nextjs':
+            return <Nextjs />;
+        case 'NodeJS':
+            return <NodeJS />;
+        case 'Photoshop':
+            return <Photoshop />;
+        case 'Postman':
+            return <Postman />;
+        case 'Reactjs':
+            return <Reactjs />;
+        case 'ReactRouter':
+            return <ReactRouter />;
+        case 'Redux':
+            return <Redux />;
+        case 'Sass':
+            return <Sass />;
+        case 'Socketio':
+            return <Socketio />;
+        case 'StyledComponents':
+            return <StyledComponents />;
+        case 'Tailwindcss':
+            return <Tailwindcss />;
+        case 'Typescript':
+            return <Typescript />;
+        case 'Code':
+            return <Code />;
+        case 'Axios':
+            return <Axios {...props} />;
+        case 'Earth':
+            return <Earth {...props} />;
+        case 'Api':
+            return <Api {...props} />;
+        case 'Npm':
+            return <Npm {...props} />;
+        case 'Json':
+            return <Json {...props} />;
+        case 'Mongodb':
+            return <Mongodb {...props} />;
+        case 'Database':
+            return <Database {...props} />;
         default:
             return <Link {...props} />;
     }
