@@ -57,6 +57,7 @@ import Reaction from './general/Reaction';
 import Point from './general/Point';
 import Spinner from './general/Spinner';
 import Earth from './general/Earth';
+import Palette from './general/Palette';
 
 import ArrowLeft from './navigation/ArrowLeft';
 import ArrowRight from './navigation/ArrowRight';
@@ -125,13 +126,13 @@ import SDCard from './device/SDCard';
 import Router from './device/Router';
 import Database from './device/Database';
 
-import Home from './home/Home';
-import Book from './home/Book';
-import BookOpen from './home/BookOpen';
-import Picture from './home/Picture';
-import BoxEmpty from './home/BoxEmpty';
-import Box from './home/Box';
-import Clock from './home/Clock';
+import Home from './general/Home';
+import Book from './general/Book';
+import BookOpen from './general/BookOpen';
+import Picture from './general/Picture';
+import BoxEmpty from './general/BoxEmpty';
+import Box from './general/Box';
+import Clock from './general/Clock';
 
 import Map from './map/Map';
 import Position from './map/Position';
@@ -214,7 +215,6 @@ import Italic from './text/Italic';
 import TextHeight from './text/TextHeight';
 import Dots from './text/Dots';
 import Menu from './text/Menu';
-import Code from './text/Code';
 import AlignRight from './text/AlignRight';
 
 import Dashboard from './layout/Dashboard';
@@ -856,53 +856,51 @@ const Icon = (props) => {
         case 'Spinner':
             return <Spinner {...props} />;
         case 'Bootstrap':
-            return <Bootstrap />;
+            return <Bootstrap {...props} />;
         case 'Chrome':
-            return <Chrome />;
+            return <Chrome {...props} />;
         case 'Command':
-            return <Command />;
+            return <Command {...props} />;
         case 'CSS':
-            return <CSS />;
+            return <CSS {...props} />;
         case 'HTML':
-            return <HTML />;
+            return <HTML {...props} />;
         case 'Express':
-            return <Express />;
+            return <Express {...props} />;
         case 'Gatsby':
-            return <Gatsby />;
+            return <Gatsby {...props} />;
         case 'Github':
-            return <Github />;
+            return <Github {...props} />;
         case 'Graphql':
-            return <Graphql />;
+            return <Graphql {...props} />;
         case 'Gulp':
-            return <Gulp />;
+            return <Gulp {...props} />;
         case 'Javascript':
-            return <Javascript />;
+            return <Javascript {...props} />;
         case 'Nextjs':
-            return <Nextjs />;
+            return <Nextjs {...props} />;
         case 'NodeJS':
-            return <NodeJS />;
+            return <NodeJS {...props} />;
         case 'Photoshop':
-            return <Photoshop />;
+            return <Photoshop {...props} />;
         case 'Postman':
-            return <Postman />;
+            return <Postman {...props} />;
         case 'Reactjs':
-            return <Reactjs />;
+            return <Reactjs {...props} />;
         case 'ReactRouter':
-            return <ReactRouter />;
+            return <ReactRouter {...props} />;
         case 'Redux':
-            return <Redux />;
+            return <Redux {...props} />;
         case 'Sass':
-            return <Sass />;
+            return <Sass {...props} />;
         case 'Socketio':
-            return <Socketio />;
+            return <Socketio {...props} />;
         case 'StyledComponents':
-            return <StyledComponents />;
+            return <StyledComponents {...props} />;
         case 'Tailwindcss':
-            return <Tailwindcss />;
+            return <Tailwindcss {...props} />;
         case 'Typescript':
-            return <Typescript />;
-        case 'Code':
-            return <Code />;
+            return <Typescript {...props} />;
         case 'Axios':
             return <Axios {...props} />;
         case 'Earth':
@@ -917,6 +915,8 @@ const Icon = (props) => {
             return <Mongodb {...props} />;
         case 'Database':
             return <Database {...props} />;
+        case 'Palette':
+            return <Palette {...props} />;
         default:
             return <Link {...props} />;
     }
